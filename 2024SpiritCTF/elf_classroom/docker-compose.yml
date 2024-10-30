@@ -1,0 +1,10 @@
+services:
+  app: 
+    build: .
+    image: libr/elf_classroom
+    ports:
+      - 9999:1145
+    volumes:
+      - "./flag:/flag"
+    tty: true
+    restart: always

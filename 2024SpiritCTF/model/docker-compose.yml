@@ -1,0 +1,10 @@
+services:
+  app: 
+    build: .
+    image: libr/model
+    ports:
+      - 9999:1145
+    volumes:
+      - "./flag:/flag"
+    tty: true
+    restart: always
